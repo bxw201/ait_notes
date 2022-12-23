@@ -1,0 +1,18 @@
+This is from cats.hbs.
+
+<form method="GET" action="/cats">
+    min lives: <input type="number" name="minLives" value="">
+    <input type="submit" value="filter">
+</form>
+
+<ul>
+    {{#each cats as |cat|}}
+    <li>{{cat.name}}: {{cat.lives}}</li>
+    {{/each}}
+</ul>
+
+<form method="POST" action="">
+    <div>name: <input type="text" name="catName"></div>
+    <div>lives: <input type="number" name="catLives"></div>
+    <div><input type="submit" name="submit"></div>
+</form>

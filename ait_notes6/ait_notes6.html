@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<style>
+		/*#container {
+			display: grid;
+			grid-template-columns: 2fr 1fr 1fr;
+		}*/
+
+		.foo {
+			border: 4px solid red;
+			width: 250px;
+			height: 250px;
+			/*display: inline-block; /*default is block*/*/
+		}
+
+		#bar {
+			/*grid-column: 1/3; start point / end point*/
+			/*display: none;*/
+			/*visibility: hidden;*/
+			position: relative;
+			top: 10px;
+			left: 30px;
+		}
+
+		#baz {
+			background-color: #0000FF64;
+			width: 100px;
+			height: 50px;
+			position: absolute; /*relative to the nearest positioned ancestor*/
+			bottom: 0px;
+			right: 0px;
+		}
+
+		#qux {
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+			font-size: 40px;
+			background-color: green;
+		}
+	</style>
+	<div id="qux">at the bottom</div>
+	<div id="container">
+		<div id="bar" class="foo">
+			A
+			<div id="baz">Hello</div>
+		</div>
+		<div class="foo">B</div>
+		<div class="foo">C</div>
+		<div class="foo">D</div>
+		<div class="foo">E</div>
+		<div class="foo">F</div>
+	</div>
+	<button>Click me</button>
+</body>
+<script type="text/javascript" src="./ait_notes6.js"></script>
+</html>

@@ -1,0 +1,19 @@
+MongoDB
+- document store in bson (binary json)
+- can be strings, numbers, other objects, arrays
+- objectID is a unique identifier for documents
+	- created for each document if "\_id" is not a key
+- ie {title: zodiac, author: {first: neal, last: stephenson}}
+- documents are key value pairs
+- many docs are a collection and many collections can be in a database
+- instance of running mognodb server can have multiple dbs
+- `mongod` is the server and `mongosh` is the client
+- can relate either with multiple collections and ids between the two or using subdocs
+	- subdocs prioritize reads
+
+Mongoose
+- object document mapper
+- maps actual javascript objects to documents in the database
+- can specify schema for collection
+- collection names should be lowercase and plural
+
